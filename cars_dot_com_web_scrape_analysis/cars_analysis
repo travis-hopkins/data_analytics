@@ -1,0 +1,106 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "7df2a2c1-2b05-46f3-b416-11b66c5e5bf6",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import pandas as pd\n",
+    "import seaborn as sns\n",
+    "import matplotlib.pyplot as plt"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "id": "ca2dcd21-c29a-40a0-ae37-9a22e62f5c69",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "df = pd.read_csv('cars_by_popular_city.csv')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "id": "fcb3ec09-dbb3-4026-8e87-529d0486d544",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(1834, 13)"
+      ]
+     },
+     "execution_count": 28,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "df.shape"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "id": "7fbe9537-1a4b-498a-862b-73c693ac6182",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Location\n",
+      "atlanta-ga         226\n",
+      "philadelphia-pa    203\n",
+      "seattle-wa         203\n",
+      "denver-co          202\n",
+      "columbus-oh        201\n",
+      "houston-tx         201\n",
+      "phoenix-az         201\n",
+      "dallas-tx          200\n",
+      "chicago-il         197\n",
+      "Name: count, dtype: int64\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(df['Location'].value_counts())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "afe501c7-a128-4143-b17a-de640ec48ce3",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "df.d"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
